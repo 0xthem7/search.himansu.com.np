@@ -3,7 +3,7 @@ body{
   background-image: url('https://w.wallhaven.cc/full/yj/wallhaven-yjk9gx.jpg');
   background-size: cover;
   overflow: hidden;
-
+  font-family: Arial, sans-serif;
 }
 
 .mainDiv{
@@ -22,3 +22,23 @@ body{
   font-size: 62.em;
 }
 
+.container{
+  display: flex;
+  gap: 10px;
+  background: #fffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px (0,0,0,0.1);
+}
+
+
+input, select, button{
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccccc;
+  border-radius: 5px;
+}
+
+button{
+  display: none
+}

@@ -4,11 +4,22 @@
       Search | 0xtheM7
     </title>
     <link rel="stylesheet" href="./cool.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
     <div class="mainDiv">
-      Google: <input type="text" name="Search" value="">
+      <div class="container">
+        <select id="searchEngine">
+          <option value="https://www.google.com/search?q=">Google</option>
+          <option value="https://www.bing.com/search?q=">Bing</option>
+          <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+        </select>
+        <input type="text" id="query" placeholder="Who is 0xtheM7!">
+        <button onclick="search()" id="searchButton">Search</button>
+      </div>
+        
     </div>
+    <script src="./hency.js"></script>
   </body>
 </html>
