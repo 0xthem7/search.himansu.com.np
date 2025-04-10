@@ -1,0 +1,24 @@
+body{
+  margin: 0px;
+  background-image: url('https://w.wallhaven.cc/full/1p/wallhaven-1pk5g3.jpg');
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.mainDiv{
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  margin: 20px 35px;
+  opacity: 0.6;
+
+  overflow: hidden;
+
+  border: 2px solid #C39292;
+  background: #1B1833;
+
+  color: #A888B5;
+  font-size: 62.em;
+}
+
