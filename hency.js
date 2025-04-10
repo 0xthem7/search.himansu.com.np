@@ -1,3 +1,5 @@
+let inactivityTimer;
+
 function search() {
   const searchEngine = document.getElementById("searchEngine").value;
   const query = document.getElementById("query").value;
@@ -21,3 +23,18 @@ document.getElementById("query").addEventListener("keypress",
     }
   }
 )
+
+function startInactivityTimer(){
+  clearTimeout(inactivityTimer);
+  
+  inactivityTimer = setTimeout(function(){
+    alert('/!\\What the hell are you doing on this page ? /!\\');
+  }, 6000)
+
+}
+
+document.getElementById("query").addEventListener("input", startInactivityTimer);
+document.getElementById('searchButton').addEventListener('click', startInactivityTimer);
+
+startInactivityTimer();
+
